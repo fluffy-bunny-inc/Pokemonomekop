@@ -22,8 +22,8 @@ namespace MonsterBattle
             "Tepig","Oshawott","Chespin",
             "Fennekin","Froakie","Rowlet",
             "Litten","Popplio","Arceus",
-
-        };
+         
+};
 
         public PokemonSwitchMenu()
         {
