@@ -87,6 +87,12 @@
     <EmbeddedResource Include="InterfaceMenu.resx">
       <DependentUpon>InterfaceMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InvetoryMenu.resx">
+      <DependentUpon>InvetoryMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokemonSwitchMenu.resx">
+      <DependentUpon>PokemonSwitchMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +142,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\attack_lightning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulbasaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charmander.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

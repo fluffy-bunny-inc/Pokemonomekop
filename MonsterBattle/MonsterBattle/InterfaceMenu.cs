@@ -16,5 +16,10 @@ namespace MonsterBattle
         {
             InitializeComponent();
         }
+
+        private void pokemonSwitchMenuButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
