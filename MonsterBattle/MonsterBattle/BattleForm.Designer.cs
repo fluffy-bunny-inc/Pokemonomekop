@@ -42,7 +42,6 @@
             this.friendlyPictureBox = new System.Windows.Forms.PictureBox();
             this.attackTimer = new System.Windows.Forms.Timer(this.components);
             this.screenShakeTimer = new System.Windows.Forms.Timer(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -177,20 +176,11 @@
             this.screenShakeTimer.Interval = 50;
             this.screenShakeTimer.Tick += new System.EventHandler(this.screenShakeTimer_Tick);
             // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 227);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(480, 76);
-            this.panel4.TabIndex = 2;
-            // 
             // BattleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 303);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.attackButton);
             this.Controls.Add(this.panel1);
             this.Name = "BattleForm";
@@ -222,7 +212,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label enemyLevel;
         private System.Windows.Forms.Timer screenShakeTimer;
-        private System.Windows.Forms.Panel panel4;
     }
 }
 

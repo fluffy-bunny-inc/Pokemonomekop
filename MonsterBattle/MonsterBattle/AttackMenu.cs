@@ -12,6 +12,7 @@ namespace MonsterBattle
 {
     public partial class AttackMenu : UserControl
     {
+        public string[] pokemon = new string[1] {"Pikachu" };
         public string[] attacks = new string[18] {
             "Lightning Strike","Bolder","Speed Attack",
             "Bulble gum","Flash","Light",
@@ -28,7 +29,7 @@ namespace MonsterBattle
 
         private void AttackMenu_Load(object sender, EventArgs e)
         {
-            if (pokemon == "Pikachu")
+            if (pokemon[1] == "Pikachu")
             {
                 attackOneButton.Text = attacks[3].ToString();
                 attackTwoButton.Text = attacks[10].ToString();
