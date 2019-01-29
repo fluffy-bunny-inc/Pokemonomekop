@@ -87,6 +87,9 @@
     <EmbeddedResource Include="InterfaceMenu.resx">
       <DependentUpon>InterfaceMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InvetoryMenu.resx">
+      <DependentUpon>InvetoryMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

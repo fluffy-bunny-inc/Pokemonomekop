@@ -33,6 +33,7 @@
             this.attackButton = new System.Windows.Forms.Button();
             this.attackTimer = new System.Windows.Forms.Timer(this.components);
             this.screenShakeTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,6 +71,14 @@
             // 
             this.screenShakeTimer.Interval = 50;
             this.screenShakeTimer.Tick += new System.EventHandler(this.screenShakeTimer_Tick);
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 267);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(480, 36);
+            this.panel4.TabIndex = 2;
             // 
             // panel1
             // 
@@ -181,6 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 303);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.attackButton);
             this.Controls.Add(this.panel1);
             this.Name = "BattleForm";
@@ -211,6 +221,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label enemyLevel;
         private System.Windows.Forms.Timer screenShakeTimer;
+        private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.PictureBox ownHealthPictureBox;
     }
 }

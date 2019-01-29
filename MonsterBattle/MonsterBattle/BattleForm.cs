@@ -22,6 +22,11 @@ namespace MonsterBattle
             randomGenerator = new Random();
         }
 
+        public void setHealth(int health)
+        {
+           ownHealthPictureBox.Width += 60;
+        }
+
         private void attackButton_Click(object sender, EventArgs e)
         {
             if (!enemyDead)
