@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "AttackMenu";
             this.Size = new System.Drawing.Size(480, 78);
+            this.Load += new System.EventHandler(this.AttackMenu_Load);
             this.ResumeLayout(false);
 
         }
