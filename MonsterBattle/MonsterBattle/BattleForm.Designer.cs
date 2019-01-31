@@ -42,6 +42,10 @@
             this.friendlyPictureBox = new System.Windows.Forms.PictureBox();
             this.attackTimer = new System.Windows.Forms.Timer(this.components);
             this.screenShakeTimer = new System.Windows.Forms.Timer(this.components);
+            this.backButton = new System.Windows.Forms.Button();
+            this.attackTwoButton = new System.Windows.Forms.Button();
+            this.attackThreeButton = new System.Windows.Forms.Button();
+            this.attackOneButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,7 +57,7 @@
             // 
             // attackButton
             // 
-            this.attackButton.Location = new System.Drawing.Point(278, 230);
+            this.attackButton.Location = new System.Drawing.Point(48, 67);
             this.attackButton.Name = "attackButton";
             this.attackButton.Size = new System.Drawing.Size(190, 61);
             this.attackButton.TabIndex = 1;
@@ -69,6 +73,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.enemyPictureBox);
             this.panel1.Controls.Add(this.friendlyPictureBox);
+            this.panel1.Controls.Add(this.attackButton);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 224);
@@ -176,12 +181,48 @@
             this.screenShakeTimer.Interval = 50;
             this.screenShakeTimer.Tick += new System.EventHandler(this.screenShakeTimer_Tick);
             // 
+            // backButton
+            // 
+            this.backButton.Location = new System.Drawing.Point(3, 268);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(235, 34);
+            this.backButton.TabIndex = 8;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            // 
+            // attackTwoButton
+            // 
+            this.attackTwoButton.Location = new System.Drawing.Point(242, 230);
+            this.attackTwoButton.Name = "attackTwoButton";
+            this.attackTwoButton.Size = new System.Drawing.Size(235, 34);
+            this.attackTwoButton.TabIndex = 7;
+            this.attackTwoButton.UseVisualStyleBackColor = true;
+            // 
+            // attackThreeButton
+            // 
+            this.attackThreeButton.Location = new System.Drawing.Point(242, 268);
+            this.attackThreeButton.Name = "attackThreeButton";
+            this.attackThreeButton.Size = new System.Drawing.Size(235, 34);
+            this.attackThreeButton.TabIndex = 6;
+            this.attackThreeButton.UseVisualStyleBackColor = true;
+            // 
+            // attackOneButton
+            // 
+            this.attackOneButton.Location = new System.Drawing.Point(3, 230);
+            this.attackOneButton.Name = "attackOneButton";
+            this.attackOneButton.Size = new System.Drawing.Size(235, 34);
+            this.attackOneButton.TabIndex = 5;
+            this.attackOneButton.UseVisualStyleBackColor = true;
+            // 
             // BattleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 303);
-            this.Controls.Add(this.attackButton);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.attackTwoButton);
+            this.Controls.Add(this.attackThreeButton);
+            this.Controls.Add(this.attackOneButton);
             this.Controls.Add(this.panel1);
             this.Name = "BattleForm";
             this.Text = "Pokemon Battle";
@@ -212,6 +253,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label enemyLevel;
         private System.Windows.Forms.Timer screenShakeTimer;
+        private System.Windows.Forms.Button attackOneButton;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button attackThreeButton;
+        private System.Windows.Forms.Button attackTwoButton;
     }
 }
 
