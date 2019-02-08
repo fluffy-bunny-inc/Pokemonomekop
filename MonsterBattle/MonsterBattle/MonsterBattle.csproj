@@ -46,29 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttackMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AttackMenu.Designer.cs">
-      <DependentUpon>AttackMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="BattleForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BattleForm.Designer.cs">
       <DependentUpon>BattleForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InterfaceMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="InterfaceMenu.Designer.cs">
-      <DependentUpon>InterfaceMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InvetoryMenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="InvetoryMenu.Designer.cs">
-      <DependentUpon>InvetoryMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="PokemonSwitchMenu.cs">
       <SubType>UserControl</SubType>
@@ -78,17 +60,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AttackMenu.resx">
-      <DependentUpon>AttackMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BattleForm.resx">
       <DependentUpon>BattleForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InterfaceMenu.resx">
-      <DependentUpon>InterfaceMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InvetoryMenu.resx">
-      <DependentUpon>InvetoryMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

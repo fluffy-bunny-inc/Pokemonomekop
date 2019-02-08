@@ -40,13 +40,6 @@
             this.enemyHealthPictureBox = new System.Windows.Forms.PictureBox();
             this.enemyPictureBox = new System.Windows.Forms.PictureBox();
             this.friendlyPictureBox = new System.Windows.Forms.PictureBox();
-            this.attackTimer = new System.Windows.Forms.Timer(this.components);
-            this.screenShakeTimer = new System.Windows.Forms.Timer(this.components);
-            this.backButton = new System.Windows.Forms.Button();
-            this.attackTwoButton = new System.Windows.Forms.Button();
-            this.attackThreeButton = new System.Windows.Forms.Button();
-            this.attackOneButton = new System.Windows.Forms.Button();
-            this.AttackMenuPannel = new System.Windows.Forms.Panel();
             this.MenuPannel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -57,6 +50,13 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.attackTimer = new System.Windows.Forms.Timer(this.components);
+            this.screenShakeTimer = new System.Windows.Forms.Timer(this.components);
+            this.AttackMenuBackButton = new System.Windows.Forms.Button();
+            this.attackTwoButton = new System.Windows.Forms.Button();
+            this.attackThreeButton = new System.Windows.Forms.Button();
+            this.attackOneButton = new System.Windows.Forms.Button();
+            this.AttackMenuPannel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,9 +64,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.enemyHealthPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.friendlyPictureBox)).BeginInit();
-            this.AttackMenuPannel.SuspendLayout();
             this.MenuPannel.SuspendLayout();
             this.InventoryPannel.SuspendLayout();
+            this.AttackMenuPannel.SuspendLayout();
             this.SuspendLayout();
             // 
             // attackButton
@@ -87,7 +87,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.enemyPictureBox);
             this.panel1.Controls.Add(this.friendlyPictureBox);
+            this.panel1.Controls.Add(this.MenuPannel);
             this.panel1.Controls.Add(this.attackButton);
+            this.panel1.Controls.Add(this.InventoryPannel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 224);
@@ -185,73 +187,15 @@
             this.friendlyPictureBox.TabIndex = 0;
             this.friendlyPictureBox.TabStop = false;
             // 
-            // attackTimer
-            // 
-            this.attackTimer.Interval = 1000;
-            this.attackTimer.Tick += new System.EventHandler(this.attackTimer_Tick);
-            // 
-            // screenShakeTimer
-            // 
-            this.screenShakeTimer.Interval = 50;
-            this.screenShakeTimer.Tick += new System.EventHandler(this.screenShakeTimer_Tick);
-            // 
-            // backButton
-            // 
-            this.backButton.Location = new System.Drawing.Point(3, 41);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(235, 34);
-            this.backButton.TabIndex = 8;
-            this.backButton.Text = "Back";
-            this.backButton.UseVisualStyleBackColor = true;
-            // 
-            // attackTwoButton
-            // 
-            this.attackTwoButton.Location = new System.Drawing.Point(242, 3);
-            this.attackTwoButton.Name = "attackTwoButton";
-            this.attackTwoButton.Size = new System.Drawing.Size(235, 34);
-            this.attackTwoButton.TabIndex = 7;
-            this.attackTwoButton.UseVisualStyleBackColor = true;
-            // 
-            // attackThreeButton
-            // 
-            this.attackThreeButton.Location = new System.Drawing.Point(242, 41);
-            this.attackThreeButton.Name = "attackThreeButton";
-            this.attackThreeButton.Size = new System.Drawing.Size(235, 34);
-            this.attackThreeButton.TabIndex = 6;
-            this.attackThreeButton.UseVisualStyleBackColor = true;
-            // 
-            // attackOneButton
-            // 
-            this.attackOneButton.Location = new System.Drawing.Point(3, 3);
-            this.attackOneButton.Name = "attackOneButton";
-            this.attackOneButton.Size = new System.Drawing.Size(235, 34);
-            this.attackOneButton.TabIndex = 5;
-            this.attackOneButton.UseVisualStyleBackColor = true;
-            // 
-            // AttackMenuPannel
-            // 
-            this.AttackMenuPannel.Controls.Add(this.MenuPannel);
-            this.AttackMenuPannel.Controls.Add(this.attackOneButton);
-            this.AttackMenuPannel.Controls.Add(this.backButton);
-            this.AttackMenuPannel.Controls.Add(this.attackThreeButton);
-            this.AttackMenuPannel.Controls.Add(this.attackTwoButton);
-            this.AttackMenuPannel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.AttackMenuPannel.Location = new System.Drawing.Point(0, 222);
-            this.AttackMenuPannel.Name = "AttackMenuPannel";
-            this.AttackMenuPannel.Size = new System.Drawing.Size(481, 81);
-            this.AttackMenuPannel.TabIndex = 9;
-            // 
             // MenuPannel
             // 
             this.MenuPannel.Controls.Add(this.button1);
             this.MenuPannel.Controls.Add(this.button2);
             this.MenuPannel.Controls.Add(this.button3);
             this.MenuPannel.Controls.Add(this.button4);
-            this.MenuPannel.Controls.Add(this.InventoryPannel);
-            this.MenuPannel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.MenuPannel.Location = new System.Drawing.Point(0, 0);
+            this.MenuPannel.Location = new System.Drawing.Point(3, 210);
             this.MenuPannel.Name = "MenuPannel";
-            this.MenuPannel.Size = new System.Drawing.Size(481, 81);
+            this.MenuPannel.Size = new System.Drawing.Size(571, 81);
             this.MenuPannel.TabIndex = 10;
             // 
             // button1
@@ -293,8 +237,7 @@
             this.InventoryPannel.Controls.Add(this.button6);
             this.InventoryPannel.Controls.Add(this.button7);
             this.InventoryPannel.Controls.Add(this.button8);
-            this.InventoryPannel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.InventoryPannel.Location = new System.Drawing.Point(0, 0);
+            this.InventoryPannel.Location = new System.Drawing.Point(210, 192);
             this.InventoryPannel.Name = "InventoryPannel";
             this.InventoryPannel.Size = new System.Drawing.Size(481, 81);
             this.InventoryPannel.TabIndex = 10;
@@ -332,15 +275,75 @@
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // attackTimer
+            // 
+            this.attackTimer.Interval = 1000;
+            this.attackTimer.Tick += new System.EventHandler(this.attackTimer_Tick);
+            // 
+            // screenShakeTimer
+            // 
+            this.screenShakeTimer.Interval = 50;
+            this.screenShakeTimer.Tick += new System.EventHandler(this.screenShakeTimer_Tick);
+            // 
+            // AttackMenuBackButton
+            // 
+            this.AttackMenuBackButton.Location = new System.Drawing.Point(3, 41);
+            this.AttackMenuBackButton.Name = "AttackMenuBackButton";
+            this.AttackMenuBackButton.Size = new System.Drawing.Size(235, 34);
+            this.AttackMenuBackButton.TabIndex = 8;
+            this.AttackMenuBackButton.Text = "Back";
+            this.AttackMenuBackButton.UseVisualStyleBackColor = true;
+            this.AttackMenuBackButton.Click += new System.EventHandler(this.AttackMenubackButton_Click);
+            // 
+            // attackTwoButton
+            // 
+            this.attackTwoButton.Location = new System.Drawing.Point(242, 3);
+            this.attackTwoButton.Name = "attackTwoButton";
+            this.attackTwoButton.Size = new System.Drawing.Size(235, 34);
+            this.attackTwoButton.TabIndex = 7;
+            this.attackTwoButton.UseVisualStyleBackColor = true;
+            this.attackTwoButton.Click += new System.EventHandler(this.attackTwoButton_Click);
+            // 
+            // attackThreeButton
+            // 
+            this.attackThreeButton.Location = new System.Drawing.Point(242, 41);
+            this.attackThreeButton.Name = "attackThreeButton";
+            this.attackThreeButton.Size = new System.Drawing.Size(235, 34);
+            this.attackThreeButton.TabIndex = 6;
+            this.attackThreeButton.UseVisualStyleBackColor = true;
+            this.attackThreeButton.Click += new System.EventHandler(this.attackThreeButton_Click);
+            // 
+            // attackOneButton
+            // 
+            this.attackOneButton.Location = new System.Drawing.Point(3, 3);
+            this.attackOneButton.Name = "attackOneButton";
+            this.attackOneButton.Size = new System.Drawing.Size(235, 34);
+            this.attackOneButton.TabIndex = 5;
+            this.attackOneButton.UseVisualStyleBackColor = true;
+            this.attackOneButton.Click += new System.EventHandler(this.attackOneButton_Click);
+            // 
+            // AttackMenuPannel
+            // 
+            this.AttackMenuPannel.Controls.Add(this.attackOneButton);
+            this.AttackMenuPannel.Controls.Add(this.AttackMenuBackButton);
+            this.AttackMenuPannel.Controls.Add(this.attackThreeButton);
+            this.AttackMenuPannel.Controls.Add(this.attackTwoButton);
+            this.AttackMenuPannel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.AttackMenuPannel.Location = new System.Drawing.Point(0, 222);
+            this.AttackMenuPannel.Name = "AttackMenuPannel";
+            this.AttackMenuPannel.Size = new System.Drawing.Size(571, 81);
+            this.AttackMenuPannel.TabIndex = 9;
+            // 
             // BattleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 303);
+            this.ClientSize = new System.Drawing.Size(571, 303);
             this.Controls.Add(this.AttackMenuPannel);
             this.Controls.Add(this.panel1);
             this.Name = "BattleForm";
             this.Text = "Pokemon Battle";
+            this.Load += new System.EventHandler(this.BattleForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -350,9 +353,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.enemyHealthPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemyPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.friendlyPictureBox)).EndInit();
-            this.AttackMenuPannel.ResumeLayout(false);
             this.MenuPannel.ResumeLayout(false);
             this.InventoryPannel.ResumeLayout(false);
+            this.AttackMenuPannel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -372,7 +375,7 @@
         private System.Windows.Forms.Label enemyLevel;
         private System.Windows.Forms.Timer screenShakeTimer;
         private System.Windows.Forms.Button attackOneButton;
-        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button AttackMenuBackButton;
         private System.Windows.Forms.Button attackThreeButton;
         private System.Windows.Forms.Button attackTwoButton;
         private System.Windows.Forms.Panel AttackMenuPannel;
